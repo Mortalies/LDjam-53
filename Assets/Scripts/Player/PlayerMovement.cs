@@ -1,19 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[RequireComponent(typeof(Rigidbody))]
+
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody _rigidbody;
+    private Rigidbody2D _rigidbody2D;
 
-    [SerializeField] float _speed;
-    public void MoveDirection(Vector3 direction)
+    [SerializeField] private float _speed;
+    public void MoveDirection(Vector2 direction)
     {
-        _rigidbody.MovePosition(_rigidbody.position + (direction * _speed * Time.deltaTime));
+        _rigidbody2D.MovePosition(_rigidbody2D.position + (direction * _speed * Time.deltaTime));
     }
 
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
+    
 }
