@@ -13,7 +13,7 @@ public class SoulCharacter : MonoBehaviour, IInteractable
     }
     public void Interact()
     {
-        // ���������� ���� ����� �����������. ������ ���� ������� �� DialogueData
+        DialogueController.instance.SetDialogue(_dialogueData.messages);
     }
 
     public void ApplyDamage()

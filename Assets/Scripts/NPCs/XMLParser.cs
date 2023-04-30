@@ -11,25 +11,24 @@ using UnityEditor;
 public class XMLParser : MonoBehaviour
 {
     
-    public Dictionary<DialogeType, string> ParseXmlFile(TextAsset file)
+    public List<Message> ParseXmlFile(TextAsset file)
     {
-        Dictionary<DialogeType, string> phrases = new Dictionary<DialogeType, string>();
+        List<Message> messages = new List<Message>();
         string data = file.text;
         string totVal = "";
         XmlDocument xmlDoc = new XmlDocument();
         xmlDoc.Load(new StringReader(data));
-        string xmlPathPattern = "//Questions/Question";
+        string xmlPathPattern = "//Dialogue/Question";
         XmlNodeList myNodeList = xmlDoc.SelectNodes(xmlPathPattern);
         foreach (XmlNode node in myNodeList)
         {
-            XmlNode questionText = node.FirstChild;
-            XmlNode answer = questionText.NextSibling;
-            totVal += "questionText: " + questionText.InnerText + "\n answer: " + answer.InnerText + "\n\n";
-            phrases.Add(DialogeType.Player, questionText.InnerText);
-            phrases.Add(DialogeType.Soul, answer.InnerText);
-            
+            XmlNode name = node.FirstChild;
+            XmlNode questionText = name.NextSibling;
+            totVal += "questionText: " + questionText.InnerText + "\n answer: " + name.InnerText + "\n\n";
+            messages.Add(new Message(questionText.InnerText, name.InnerText));
+
         }
-        return phrases;
+        return messages;
     }
 
 

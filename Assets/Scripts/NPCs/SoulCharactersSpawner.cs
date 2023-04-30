@@ -7,6 +7,7 @@ public class SoulCharactersSpawner : MonoBehaviour
     SoulCharactersFactory factory;
     [SerializeField] private List<SoulCharacterConfig> _configs = new List<SoulCharacterConfig>();
     [SerializeField] private List<Transform> _spawnPoints = new List<Transform>();
+
     void Start()
     {
         factory = new SoulCharactersFactory();
