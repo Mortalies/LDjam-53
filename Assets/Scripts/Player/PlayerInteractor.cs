@@ -14,7 +14,7 @@ public class PlayerInteractor : MonoBehaviour
         
         foreach (var collider in colliders)
         {
-            collider.gameObject.Route<NPC>(npc => npc.ApplyDamage());
+            collider.gameObject.Route<SoulCharacter>(character => character.ApplyDamage());
             collider.gameObject.Route<Grass>(grass => grass.DestroyGrass());
         }
     }
@@ -25,7 +25,7 @@ public class PlayerInteractor : MonoBehaviour
         
         foreach (var collider in colliders)
         {
-            collider.gameObject.Route<NPC>(npc => npc.Interact());
+            collider.gameObject.Route<IInteractable>(character => character.Interact());
         }
     }
 
