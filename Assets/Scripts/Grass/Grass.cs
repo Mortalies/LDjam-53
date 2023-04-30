@@ -14,7 +14,11 @@ public class Grass : MonoBehaviour
     {
         _defualtSprite.color = new Color(_defualtSprite.color.r, _defualtSprite.color.g, _defualtSprite.color.b, 1f);
     }
-    
+
+    public void DestroyGrass()
+    {
+        Destroy(this.gameObject);
+    }
     private void Awake()
     {
         _defualtSprite = GetComponent<SpriteRenderer>();

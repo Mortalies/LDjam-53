@@ -2,7 +2,7 @@
 
 public class CameraFollower: MonoBehaviour
 {
-    [SerializeField] private float _distance = 3f;
+    [Min((0f))][SerializeField] private float _distance = 3f;
     [Range(0f,1f)] [SerializeField] private float _smoothTime = 0.125f;
     
     [SerializeField] private Player _player;
