@@ -6,22 +6,23 @@ using UnityEngine.Serialization;
 
 public class KeyboardInput : MonoBehaviour
 {
-    [SerializeField] private PlayerMovement _playerMovement;
-    [SerializeField] private PlayerAnimation _playerAnimation;
-    [SerializeField] private PlayerInteractor _playerInteractor;
+    [SerializeField] private Player _player;
 
     private void FixedUpdate()
     {
-        _playerMovement.MoveDirection(new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
+        var direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        _player.Movement.MoveDirection(direction);
+        _player.Animation.PlayMoveAnimation(direction);
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
-            _playerAnimation.PlayAttack();
-            _playerInteractor.Attack();
+            _player.Animation.PlayAttackAnimation();
+            _player.Interactor.Attack();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            _playerInteractor.InteractWithNPC();
+            _player.Interactor.InteractWithNPC();
         }
             
     }

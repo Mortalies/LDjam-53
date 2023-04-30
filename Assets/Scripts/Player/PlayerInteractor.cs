@@ -10,7 +10,7 @@ public class PlayerInteractor : MonoBehaviour
     
     public void Attack()
     {
-        var colliders = Physics.OverlapSphere(transform.position, _attackDistance);
+        var colliders = Physics2D.OverlapCircleAll(transform.position, _attackDistance);
         
         foreach (var collider in colliders)
         {
@@ -21,7 +21,7 @@ public class PlayerInteractor : MonoBehaviour
 
     public void InteractWithNPC()
     {
-        var colliders = Physics.OverlapSphere(transform.position, _interactDistance);
+        var colliders = Physics2D.OverlapCircleAll(transform.position, _interactDistance);
         
         foreach (var collider in colliders)
         {

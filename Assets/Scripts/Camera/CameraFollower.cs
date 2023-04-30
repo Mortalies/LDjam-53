@@ -8,7 +8,7 @@ public class CameraFollower: MonoBehaviour
     [SerializeField] private Player _player;
     
     private Vector3 velocity;
-
+    
     private void Update()
     {
         var playerPosition = _player.transform.position + new Vector3(0f, 0f, -_distance);

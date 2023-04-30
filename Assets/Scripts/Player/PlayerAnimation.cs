@@ -4,12 +4,12 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
 
-    public void Walk()
+    public void PlayMoveAnimation(Vector2 direction)
     {
         
     }
 
-    public void PlayAttack()
+    public void PlayAttackAnimation()
     {
         
     }
