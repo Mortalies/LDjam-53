@@ -2,7 +2,11 @@
 
 public class CameraFollower: MonoBehaviour
 {
+<<<<<<< Updated upstream
     [Min((0f))][SerializeField] private float _distance = 5f; 
+=======
+    [Min((0f))][SerializeField] private float _distance = 3f;
+>>>>>>> Stashed changes
     private float _smoothTime = 0.125f;
     
     private Player _player;
