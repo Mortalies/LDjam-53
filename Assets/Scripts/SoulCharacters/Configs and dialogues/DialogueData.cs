@@ -12,6 +12,7 @@ public class DialogueData : ScriptableObject
     private void OnEnable()
     {
         _xmlParser = new XMLParser();
+
         messages = _xmlParser.ParseXmlFile(_textAsset);
     }
 }

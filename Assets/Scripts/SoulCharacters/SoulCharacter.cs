@@ -37,10 +37,7 @@ public class SoulCharacter : MonoBehaviour, IInteractable
     {
         if (collision.gameObject.GetComponent<HeavenTrigger>() != null)
         {
-            if (OnSoulMetDeath != null)
-            {
-                OnSoulMetDeath.Invoke(this);
-            }
+            
             HeavenTrigger heavenTrig = collision.gameObject.GetComponent<HeavenTrigger>();
             heavenTrig.Triggered(_isSinner);
             Death();
@@ -48,6 +45,10 @@ public class SoulCharacter : MonoBehaviour, IInteractable
     }
     void Death()
     {
+        if (OnSoulMetDeath != null)
+        {
+            OnSoulMetDeath.Invoke(this);
+        }
         gameObject.SetActive(false);
     }
     
