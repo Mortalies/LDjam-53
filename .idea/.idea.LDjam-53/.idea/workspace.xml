@@ -6,31 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="418f24b1-1950-4c8d-9abd-3870e3ee04d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LDjam-53/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LDjam-53/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackBack.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackBack.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackFront.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackFront.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackLeft.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackLeft.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackRigth.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/AtackRigth.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/Death.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Death/Death.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Glist/Glist.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Glist/Glist.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EndTitle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EndTitle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FogOfWar/Vision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FogOfWar/Vision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Grass/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Grass/Grass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/Configs and dialogues/NPC2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/Configs and dialogues/NPC2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/Configs and dialogues/Npc1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/Configs and dialogues/Npc1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/NPC.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/NPC.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/SoulCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/SoulCharacter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/SoulAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/SoulAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
