@@ -24,11 +24,12 @@ public class DialogueController : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        _dialogWindowView = gameObject.GetComponent<DialogWindowView>();
     }
     void Start()
     {
 
-        _dialogWindowView = gameObject.GetComponent<DialogWindowView>();
+        
         //keyBoardInput.qDown.AddListener(NextMessage);
     }
     public void SetDialogue(List<Message> messages)

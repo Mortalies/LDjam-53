@@ -9,7 +9,7 @@ public class DialogWindowView : MonoBehaviour
     [SerializeField]private TextMeshProUGUI _message;
     [SerializeField]private TextMeshProUGUI _name;
     [SerializeField]private GameObject _dialogueWindowPanel;
-    void Start()
+    void Awake()
     {
         _dialogueWindowPanel.SetActive(false);
         DialogueController.instance.dialogueEndEvent.AddListener(DeactivateDialogue);

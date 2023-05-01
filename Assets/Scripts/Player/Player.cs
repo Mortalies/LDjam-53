@@ -32,7 +32,6 @@ public class Player : MonoBehaviour
             soul.Movemet.MoveToWards(position);
         }
     }
-
     public void SoulAdd(SoulCharacter soul)
     {
         Debug.Log("soul added to bag");
