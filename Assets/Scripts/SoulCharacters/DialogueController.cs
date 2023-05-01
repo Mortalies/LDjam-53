@@ -37,7 +37,6 @@ public class DialogueController : MonoBehaviour
         if(!isDialogueStarted)
         {
             _messages = messages;
-            Debug.Log("Messages count= " + messages.Count);
             isDialogueStarted = true;
             NextMessage();
         }
@@ -61,10 +60,5 @@ public class DialogueController : MonoBehaviour
             dialogueEndEvent.Invoke();
         messageCount = 0;
         isDialogueStarted = false;
-        Debug.Log("End of dialogue");
-    }
-    public void Test()
-    {
-        Debug.Log("yasfjklasfjls");
     }
 }

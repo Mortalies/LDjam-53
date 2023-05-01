@@ -22,7 +22,7 @@ public class PlayerInteractor : MonoBehaviour
         foreach (var collider in colliders)
         {
             collider.gameObject.Route<SoulCharacter>(character => character.ApplyDamage());
-            collider.gameObject.Route<Grass>(grass => grass.DestroyGrass(transform.position)); //Изменить с transform.position на collider который мы задели взмахом
+            collider.gameObject.Route<Grass>(grass => grass.DestroyGrass(transform.position));
         }
     }
 

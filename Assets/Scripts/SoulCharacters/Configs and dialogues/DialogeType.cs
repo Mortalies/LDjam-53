@@ -9,7 +9,6 @@ public struct Message
     {
         value = _value;
         name = _name;
-        //dialogueType = type;
     }
 }
 public enum DialogueType

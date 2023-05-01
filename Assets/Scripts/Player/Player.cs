@@ -26,7 +26,6 @@ public class Player : MonoBehaviour
         
         foreach (var soul in _souls)
         {
-            Debug.Log("Soul moved");
             var position = transform.position + (soul.transform.position - transform.position) *
                 (soul.Movemet.FollowRadius / (transform.position - soul.transform.position).magnitude);
             soul.Movemet.MoveToWards(position);
@@ -34,7 +33,6 @@ public class Player : MonoBehaviour
     }
     public void SoulAdd(SoulCharacter soul)
     {
-        Debug.Log("soul added to bag");
         if(!_souls.Contains(soul) && _souls.Count < _soulsBag)
             _souls.Add(soul);
         soul.OnSoulMetDeath += DeleteSoulFormBag;

@@ -9,7 +9,6 @@ public class MenuController : MonoBehaviour
     [SerializeField] private Animator _animator;
     public void OnPlayButtonClick()
     {
-        Debug.Log("Clicked");
         _animator.SetTrigger("Fade");
     }
     public void LoadScene()

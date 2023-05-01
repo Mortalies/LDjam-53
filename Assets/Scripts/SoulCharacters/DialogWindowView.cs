@@ -23,7 +23,6 @@ public class DialogWindowView : MonoBehaviour
     private void DeactivateDialogue()
     {
         _dialogueWindowPanel.SetActive(false);
-        Debug.Log("Panel down");
     }
     void Update()
     {
