@@ -8,6 +8,7 @@ public class GameStart : MonoBehaviour
     [SerializeField] private DialogueData _dialogueData;
     [SerializeField] private List<SoulCharacter> _souls;
     [SerializeField] private string _endTitleScene;
+    [SerializeField] private Animator _animator;
     public static GameStart instance;
     private void Awake()
     {
@@ -34,8 +35,13 @@ public class GameStart : MonoBehaviour
         if (_souls.Count == 0)
         {
             Debug.Log("Game Over");
-            SceneManager.LoadScene(_endTitleScene);
+            _animator.SetTrigger("FadeOn");
+            
         }
+    }
+    public void EndScene()
+    {
+        SceneManager.LoadScene(_endTitleScene);
     }
     void Update()
     {
