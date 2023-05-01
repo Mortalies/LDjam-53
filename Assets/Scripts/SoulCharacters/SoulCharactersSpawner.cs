@@ -10,7 +10,8 @@ public class SoulCharactersSpawner : MonoBehaviour
 
     void Start()
     {
-        SpawnSoul();
+        while(_configs.Count!=0)
+            SpawnSoul();
     }
     public void SpawnSoul()
     {
@@ -18,7 +19,10 @@ public class SoulCharactersSpawner : MonoBehaviour
             return;
         
         Transform spawnPoint = _spawnPoints.RandomItem();
+        _spawnPoints.Remove(spawnPoint);
         SoulCharacterConfig config = _configs.RandomItem();
+        _configs.Remove(config);
+
         _factory.Spawn(config, spawnPoint.position);
     }
 }

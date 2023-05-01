@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private int _soulsBag;
     
-    private List<SoulCharacter> _souls = new List<SoulCharacter>();
+    [SerializeField]private List<SoulCharacter> _souls = new List<SoulCharacter>();
 
     private PlayerAnimation _animation;
     private PlayerMovement _movement;
@@ -21,11 +21,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (_souls == null)
-            return;
+        //if (_souls == null)
+        //    return;
         
         foreach (var soul in _souls)
         {
+            Debug.Log("Soul moved");
             var position = transform.position + (soul.transform.position - transform.position) *
                 (soul.SoulMovement.FollowRadius / (transform.position - soul.transform.position).magnitude);
             soul.SoulMovement.MoveToWards(position);
@@ -34,8 +35,14 @@ public class Player : MonoBehaviour
 
     public void SoulAdd(SoulCharacter soul)
     {
-        if(!_souls.Contains(soul) && _souls.Count > _soulsBag)
+        Debug.Log("soul added to bag");
+        if(!_souls.Contains(soul) && _souls.Count < _soulsBag)
             _souls.Add(soul);
+        soul.OnSoulMetDeath += DeleteSoulFormBag;
+    }
+    public void DeleteSoulFormBag(SoulCharacter soul)
+    {
+        _souls.Remove(soul);
     }
     private void Awake()
     {

@@ -1,32 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-[RequireComponent(typeof(SoulMovement))]
 public class SoulCharacter : MonoBehaviour, IInteractable
 {
+    private bool _isSinner;
     [SerializeField] private DialogueData _dialogueData;
     private SoulMovement _soulMovement;
     public SoulMovement SoulMovement => _soulMovement;
-    
-    public void Awake()
+    public delegate void soulMetDeath(SoulCharacter soul);
+    public event soulMetDeath OnSoulMetDeath;
+    public void Initialization(DialogueData dialogueData, bool isSinner)
     {
-        _soulMovement = GetComponent<SoulMovement>();
-    }
-    
-    public void Initialization(DialogueData dialogueData)
-    {
+        _isSinner = isSinner;
         _dialogueData = dialogueData;
+        _soulMovement = GetComponent<SoulMovement>();
     }
     public void Interact()
     {
-        if (_dialogueData == null)
-            return;
-        
         DialogueController.instance.SetDialogue(_dialogueData.messages);
     }
-    public void ApplyDamage()
+    
+
+    public void Awake()
     {
         
     }
+    public void ApplyDamage()
+    {
+        if (_isSinner)
+            ScoreView.instance.UpdateScore();
+        Death();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<HeavenTrigger>() != null)
+        {
+            if (OnSoulMetDeath != null)
+            {
+                OnSoulMetDeath.Invoke(this);
+            }
+            HeavenTrigger heavenTrig = collision.gameObject.GetComponent<HeavenTrigger>();
+            heavenTrig.Triggered(_isSinner);
+            Death();
+        }
+    }
+    void Death()
+    {
+        gameObject.SetActive(false);
+    }
+    
+    
 }
