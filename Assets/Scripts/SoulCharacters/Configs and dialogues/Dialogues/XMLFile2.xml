@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dialogue>
+  <Question>
+    <Name>Maxim</Name>
+    <questionText>SUKA?</questionText>
+  </Question>
+  <Question>
+    <Name>player</Name>
+    <questionText>no.</questionText>
+  </Question>
+</Dialogue>

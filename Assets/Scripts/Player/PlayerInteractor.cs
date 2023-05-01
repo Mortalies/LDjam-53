@@ -9,6 +9,8 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private float _interactDistance;
 
     [SerializeField] private Player _player;
+
+
     
     public void Attack()
     {
@@ -17,7 +19,8 @@ public class PlayerInteractor : MonoBehaviour
         foreach (var collider in colliders)
         {
             collider.gameObject.Route<SoulCharacter>(character => character.ApplyDamage());
-            collider.gameObject.Route<Grass>(grass => grass.DestroyGrass());
+            collider.gameObject.Route<Grass>(grass => grass.DestroyGrass(gameObject.transform));
+
         }
     }
 
@@ -29,6 +32,7 @@ public class PlayerInteractor : MonoBehaviour
         {
             
             collider.gameObject.Route<SoulCharacter>(_player.SoulAdd);
+            collider.gameObject.Route<SoulCharacter>(soul => soul.Interact());
         }
     }
 

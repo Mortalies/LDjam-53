@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7253976533297250256}
   - component: {fileID: 4323885502030772847}
   m_Layer: 0
-  m_Name: Npc1
+  m_Name: NPC2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _followRadius: 1
+  _followRadius: 2
 --- !u!70 &7253976533297250256
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

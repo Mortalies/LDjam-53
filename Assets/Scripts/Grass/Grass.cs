@@ -1,10 +1,17 @@
 using UnityEngine;
-
-
+using UnityEngine.Tilemaps;
 public class Grass : MonoBehaviour
 {
-    public void DestroyGrass()
+    [SerializeField] Tilemap tilemap;
+    private void Start()
     {
-        Destroy(this.gameObject);
-    }   
+        tilemap = GetComponent<Tilemap>();
+    }
+    public void DestroyGrass(Transform pos)
+    {
+        Vector3Int tilePos = tilemap.WorldToCell(pos.position);
+        tilemap.SetTile(tilePos,null);
+        
+    }
+    
 }
