@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.3807401, b: 0.358727, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -524,7 +524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -388.34, y: 62}
+  m_AnchoredPosition: {x: -388.34003, y: 62}
   m_SizeDelta: {x: -777.69, y: -123.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &413739143
@@ -855,6 +855,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maskCircle: {fileID: 2062994799}
+  _playerMovement: {fileID: 0}
+  _slow: 0
   radius: 40
   radiusInGrass: 10
 --- !u!1 &466843109

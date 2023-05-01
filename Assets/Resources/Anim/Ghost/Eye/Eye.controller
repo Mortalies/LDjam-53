@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cdc228c3e2b7648c5a2e5356e25eec66, type: 2}
+  m_Motion: {fileID: 7400000, guid: da12eb2f5eee7d5428f196b7682943ed, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -32,7 +32,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Alien
+  m_Name: Eye
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Death
@@ -100,7 +100,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b38ff01e4e3760344929821abab8133d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5f45d09213a62da499acb6bfb671addb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

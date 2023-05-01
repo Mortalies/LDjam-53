@@ -6,15 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="418f24b1-1950-4c8d-9abd-3870e3ee04d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LDjam-53/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LDjam-53/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EndTitle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EndTitle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FogOfWar/Vision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FogOfWar/Vision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/SoulAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoulCharacters/SoulAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 1.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 1.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 2.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 2.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 3.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 3.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 4.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Ghost 4.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Glist/Alien.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Glist/Alien.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Glist/AlienHell.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Anim/Ghost/Glist/AlienHell.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/bant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/bant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/glaz.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/glaz.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/prost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/prost.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/shar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Souls/shar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Baloon/anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Baloon/anim.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Bant/anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Bant/anim.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Blanket/anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Blanket/anim.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Eye/anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/Characters/Ghosts/Eye/anim.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +105,7 @@
       <workItem from="1682956523124" duration="17000" />
       <workItem from="1682956679810" duration="1101000" />
       <workItem from="1682959103176" duration="4310000" />
+      <workItem from="1682978948847" duration="1039000" />
     </task>
     <servers />
   </component>
