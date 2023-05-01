@@ -8,7 +8,7 @@ using System;
 using Microsoft.Win32.SafeHandles;
 using UnityEditor;
 
-public class XMLParser : MonoBehaviour
+public class XMLParser
 {
     
     public List<Message> ParseXmlFile(TextAsset file)
