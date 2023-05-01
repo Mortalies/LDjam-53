@@ -6,11 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/Resources/Anim/Ghost/Predator/HischHell.anim
-  m_Name: HischHell
-========
-  m_Name: BantHell
->>>>>>>> origin/Pre-realise:Assets/Resources/Anim/Ghost/Bant/BantHell.anim
+  m_Name: SosiskaHell
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -35,7 +31,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.33333334
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -52,23 +48,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-<<<<<<<< HEAD:Assets/Resources/Anim/Ghost/Predator/HischHell.anim
-      value: {fileID: -1339700905, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
-    - time: 0.1
-      value: {fileID: -1670765749, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
-    - time: 0.16666667
-      value: {fileID: 2067921102, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
+      value: {fileID: 1228496994, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
+    - time: 0.083333336
+      value: {fileID: 722924709, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
+    - time: 0.15
+      value: {fileID: -1171603085, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
     - time: 0.23333333
-      value: {fileID: 545967118, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
-========
-      value: {fileID: -1258692607, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
-    - time: 0.1
-      value: {fileID: 350382625, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
-    - time: 0.16666667
-      value: {fileID: -1687410445, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
-    - time: 0.23333333
-      value: {fileID: 1603002478, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
->>>>>>>> origin/Pre-realise:Assets/Resources/Anim/Ghost/Bant/BantHell.anim
+      value: {fileID: 35559924, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -95,17 +81,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-<<<<<<<< HEAD:Assets/Resources/Anim/Ghost/Predator/HischHell.anim
-    - {fileID: -1339700905, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
-    - {fileID: -1670765749, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
-    - {fileID: 2067921102, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
-    - {fileID: 545967118, guid: 59cf8be8f495c4b54b44fc100c0e53fd, type: 3}
-========
-    - {fileID: -1258692607, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
-    - {fileID: 350382625, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
-    - {fileID: -1687410445, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
-    - {fileID: 1603002478, guid: 7ced4f1f4f97a416ca2b5fcea5218816, type: 3}
->>>>>>>> origin/Pre-realise:Assets/Resources/Anim/Ghost/Bant/BantHell.anim
+    - {fileID: 1228496994, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
+    - {fileID: 722924709, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
+    - {fileID: -1171603085, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
+    - {fileID: 35559924, guid: 3a113ab6eadef4e198fa398f6d60caf7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -141,7 +120,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.33333334
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103

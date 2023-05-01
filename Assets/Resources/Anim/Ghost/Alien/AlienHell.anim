@@ -29,15 +29,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 0.31666666
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -50,10 +41,12 @@ AnimationClip:
     - time: 0
       value: {fileID: 720526194, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
     - time: 0.1
-      value: {fileID: 328793093, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
+      value: {fileID: 720526194, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
     - time: 0.16666667
-      value: {fileID: 1178510441, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
+      value: {fileID: 328793093, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
     - time: 0.23333333
+      value: {fileID: 1178510441, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
+    - time: 0.33333334
       value: {fileID: -666202206, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
     attribute: m_Sprite
     path: 
@@ -82,6 +75,7 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 720526194, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
+    - {fileID: 720526194, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
     - {fileID: 328793093, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
     - {fileID: 1178510441, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
     - {fileID: -666202206, guid: 9c98425a5a2b7459a9d41397aea8282a, type: 3}
@@ -90,7 +84,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.33333334
+    m_StopTime: 0.36666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -118,15 +112,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
-      - serializedVersion: 3
-        time: 0.31666666
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -138,7 +123,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.33333334
+  - time: 0.36666667
     functionName: DestroySoul
     data: 
     objectReferenceParameter: {fileID: 0}
