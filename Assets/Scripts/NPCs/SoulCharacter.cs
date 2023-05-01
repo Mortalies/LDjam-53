@@ -14,8 +14,13 @@ public class SoulCharacter : MonoBehaviour, IInteractable
     public void Interact()
     {
         DialogueController.instance.SetDialogue(_dialogueData.messages);
+        DialogueController.instance.dialogueEndEvent.AddListener(AttachToTarget);
     }
-
+    public void AttachToTarget()
+    {
+        _targetMovement = GetComponent<TargetMovement>();
+        _targetMovement.ActivateMovement();
+    }
     public void ApplyDamage()
     {
         

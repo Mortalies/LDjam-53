@@ -20,7 +20,9 @@ public class KeyboardInput : MonoBehaviour
         var direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         _player.Movement.MoveDirection(direction);
         _player.Animation.PlayMoveAnimation(direction);
-        
+    }
+    private void Update()
+    {
         if (Input.GetKeyDown(KeyCode.E))
         {
             _player.Animation.PlayAttackAnimation();
@@ -31,7 +33,7 @@ public class KeyboardInput : MonoBehaviour
         {
             _player.Interactor.InteractWithNPC();
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyUp(KeyCode.F))
         {
             DialogueController.instance.NextMessage();
         }

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: TestConfig
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: 5beae1f5d6e2d5749aec45bf9deb4bd8, type: 2}
-  prefab: {fileID: 7640337412163933667, guid: 15b3e35063655344ab11b19afae968d3, type: 3}
+  prefab: {fileID: 8503119993486040626, guid: e60fe5b0ea684254a97be1cc5c681ec8, type: 3}
+  isSinner: 0

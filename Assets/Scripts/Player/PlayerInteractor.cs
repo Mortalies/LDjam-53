@@ -26,6 +26,7 @@ public class PlayerInteractor : MonoBehaviour
         foreach (var collider in colliders)
         {
             collider.gameObject.Route<IInteractable>(character => character.Interact());
+            collider.gameObject.Route<TargetMovement>(movement => movement.SetTarget(gameObject.transform));
         }
     }
 
