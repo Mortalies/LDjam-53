@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4840dc961b173b4f98c24d789d98749, type: 3}
+  m_Name: puzir
+  m_EditorClassIdentifier: 
+  dialogueData: {fileID: 11400000, guid: 1223adbeba3c3463f98a682b83eec709, type: 2}
+  prefab: {fileID: 8503119993486040626, guid: 45ee99d25955a43799291b38f9ba3696, type: 3}
+  isSinner: 1
