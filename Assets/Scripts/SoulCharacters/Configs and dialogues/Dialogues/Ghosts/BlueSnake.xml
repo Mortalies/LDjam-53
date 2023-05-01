@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Dialogue>
+  <Question>
+    <Name>Blue Snake</Name>
+    <questionText>Have you seen my mom? No?</questionText>
+  </Question>
+ 
+ <Question>
+<Name>Blue Snake</Name>
+<questionText>Well, we ate her</questionText>
+</Question>
+</Dialogue>

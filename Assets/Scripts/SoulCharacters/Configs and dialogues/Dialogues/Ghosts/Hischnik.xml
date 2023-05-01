@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Dialogue>
+  <Question>
+    <Name>Hischnik</Name>
+    <questionText>Am I not in hell?!</questionText>
+  </Question>
+  <Question>
+    <Name>Hischnik</Name>
+    <questionText>Phew, I got lucky, but not as lucky as my grandpa when I poisoned him.</questionText>
+  </Question>
+</Dialogue>
