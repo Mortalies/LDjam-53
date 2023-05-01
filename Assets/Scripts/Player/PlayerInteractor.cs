@@ -8,8 +8,13 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private float _attackDistance;
     [SerializeField] private float _interactDistance;
 
-    [SerializeField] private Player _player;
-    
+    private Player _player;
+
+    private void Awake()
+    {
+        _player = GetComponent<Player>();   
+    }
+
     public void Attack()
     {
         var colliders = Physics2D.OverlapCircleAll(transform.position, _attackDistance);
@@ -17,7 +22,7 @@ public class PlayerInteractor : MonoBehaviour
         foreach (var collider in colliders)
         {
             collider.gameObject.Route<SoulCharacter>(character => character.ApplyDamage());
-            collider.gameObject.Route<Grass>(grass => grass.DestroyGrass());
+            collider.gameObject.Route<Grass>(grass => grass.DestroyGrass(transform.position)); //Изменить с transform.position на collider который мы задели взмахом
         }
     }
 
