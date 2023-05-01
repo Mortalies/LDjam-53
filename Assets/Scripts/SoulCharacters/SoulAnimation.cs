@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SoulAnimation : MonoBehaviour
 {
+    [SerializeField] private AudioSource _deathAudio;
     private Animator _animator;
 
     private void Awake()
@@ -15,6 +16,7 @@ public class SoulAnimation : MonoBehaviour
     public void DeathAnimation()
     {
         _animator.SetTrigger("Death");
+        _deathAudio.Play();
     }
 
     public void DestroySoul()

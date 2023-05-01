@@ -8,9 +8,7 @@ using UnityEngine.Events;
 public class KeyboardInput : MonoBehaviour
 {
     [SerializeField] private Player _player;
-    private bool _isMovementBlocked;
-    private bool _isDialogueBlocked;
-    
+
     private void FixedUpdate()
     {
         var direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));

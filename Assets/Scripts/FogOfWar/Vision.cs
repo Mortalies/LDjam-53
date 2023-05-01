@@ -5,6 +5,8 @@ using UnityEngine;
 public class Vision : MonoBehaviour
 {
     [SerializeField] private Transform maskCircle;
+    [SerializeField] private PlayerMovement _playerMovement;
+    [SerializeField] private float _slow;
     [SerializeField] private float radius;
     [SerializeField] private float radiusInGrass;
     private void Awake()
@@ -19,6 +21,7 @@ public class Vision : MonoBehaviour
         if (collision.GetComponent<Grass>() != null)
         {
             maskCircle.localScale = new Vector3(radiusInGrass, radiusInGrass, radiusInGrass);
+            _playerMovement.SlowMoveSpeed(_slow);
         }
             
     }
@@ -27,6 +30,7 @@ public class Vision : MonoBehaviour
         if (collision.GetComponent<Grass>() != null)
         {
             maskCircle.localScale = new Vector3(radius, radius, radius);
+            _playerMovement.SetToDefualt(_slow);
         }
     }
 }
