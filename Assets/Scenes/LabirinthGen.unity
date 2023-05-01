@@ -31644,7 +31644,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
     type: 3}
-  m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0.9607843}
+  m_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0.98039216}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31663,7 +31663,7 @@ Transform:
   m_GameObject: {fileID: 617111428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.3947725, y: -3.3191748, z: -4.234711}
-  m_LocalScale: {x: 60, y: 60, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -31910,13 +31910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324bce05a0e15a84ab803fa573bac7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _factory: {fileID: 0}
-  _configs:
-  - {fileID: 11400000, guid: df192c4228bd1544fabde11cb9b8b914, type: 2}
-  _spawnPoints:
-  - {fileID: 977708745}
-  - {fileID: 466843110}
-  - {fileID: 1329790593}
 --- !u!4 &1262707765
 Transform:
   m_ObjectHideFlags: 0
@@ -63892,8 +63885,8 @@ Transform:
   m_GameObject: {fileID: 2062994798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.077, y: 10.077, z: 10.077}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 40, y: 40, z: 40}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 459118595}
   m_RootOrder: 0
