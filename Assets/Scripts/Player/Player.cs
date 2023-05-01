@@ -28,8 +28,8 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Soul moved");
             var position = transform.position + (soul.transform.position - transform.position) *
-                (soul.SoulMovement.FollowRadius / (transform.position - soul.transform.position).magnitude);
-            soul.SoulMovement.MoveToWards(position);
+                (soul.Movemet.FollowRadius / (transform.position - soul.transform.position).magnitude);
+            soul.Movemet.MoveToWards(position);
         }
     }
 

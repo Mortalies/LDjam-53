@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 1292180611008224585}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc71fd139ff9948cf960ee85267eea84, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5e1c0a44daa5b7440b055a5a76e1d525, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -173,4 +173,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

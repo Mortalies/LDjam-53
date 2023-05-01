@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5418710689485284686}
   - component: {fileID: 7253976533297250256}
   - component: {fileID: 4323885502030772847}
+  - component: {fileID: 5624219393208605372}
   m_Layer: 0
   m_Name: NPC2
   m_TagString: Untagged
@@ -99,7 +100,7 @@ Animator:
   m_GameObject: {fileID: 1292180611008224585}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bc71fd139ff9948cf960ee85267eea84, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5e1c0a44daa5b7440b055a5a76e1d525, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -173,4 +174,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &5624219393208605372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292180611008224585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944f7b483c0b6c0488f1453b4bc28d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

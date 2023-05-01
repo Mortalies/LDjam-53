@@ -16,7 +16,6 @@ public class Vision : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Enter to grass");
         if (collision.GetComponent<Grass>() != null)
         {
             maskCircle.localScale = new Vector3(radiusInGrass, radiusInGrass, radiusInGrass);
@@ -25,7 +24,6 @@ public class Vision : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Exit the grass");
         if (collision.GetComponent<Grass>() != null)
         {
             maskCircle.localScale = new Vector3(radius, radius, radius);
