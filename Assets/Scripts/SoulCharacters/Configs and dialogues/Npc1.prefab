@@ -119,7 +119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292180611008224585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d209379a19c3a84cb77a842147283eb, type: 3}
+  m_Script: {fileID: 11500000, guid: dbfd670b810e7354884572de8339c856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueData: {fileID: 0}
@@ -132,12 +132,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292180611008224585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7d7bab673cad4a40a950f37a67d37b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 20eae375b1ba4024dbb8b2783a0faf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
-  _speed: 3
-  _followRadius: 0.7
+  _speed: 0
+  _followRadius: 0
   isAttached: 0
 --- !u!70 &7253976533297250256
 CapsuleCollider2D:
