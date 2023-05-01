@@ -12,7 +12,7 @@ public class SoulAnimation : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void Death()
+    public void DeathAnimation()
     {
         _animator.SetTrigger("Death");
     }

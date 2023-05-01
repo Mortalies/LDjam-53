@@ -25,29 +25,28 @@ public class SoulCharacter : MonoBehaviour, IInteractable
         DialogueController.instance.SetDialogue(_dialogueData.messages);
     }
     
-
-    public void Awake()
-    {
-        
-    }
     public void ApplyDamage()
     {
         if (_isSinner)
             ScoreView.instance.UpdateScore();
-        _animation.Death();
+        Death();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<HeavenTrigger>() != null)
         {
-            if (OnSoulMetDeath != null)
-            {
-                OnSoulMetDeath.Invoke(this);
-            }
             HeavenTrigger heavenTrig = collision.gameObject.GetComponent<HeavenTrigger>();
             heavenTrig.Triggered(_isSinner);
-            _animation.Death();
+            Death();
         }
+    }
+    private void Death()
+    {
+        if (OnSoulMetDeath != null)
+        {
+            OnSoulMetDeath.Invoke(this);
+        }
+        _animation.DeathAnimation();
     }
 
 
