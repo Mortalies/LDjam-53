@@ -2,24 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SoulMovement))]
 public class SoulCharacter : MonoBehaviour, IInteractable
 {
-    private bool _isSinner;
-    private TargetMovement _targetMovement;
     [SerializeField] private DialogueData _dialogueData;
+    private SoulMovement _soulMovement;
+    public SoulMovement SoulMovement => _soulMovement;
+    
+    public void Awake()
+    {
+        _soulMovement = GetComponent<SoulMovement>();
+    }
+    
     public void Initialization(DialogueData dialogueData)
     {
         _dialogueData = dialogueData;
     }
     public void Interact()
     {
+        if (_dialogueData == null)
+            return;
+        
         DialogueController.instance.SetDialogue(_dialogueData.messages);
-        DialogueController.instance.dialogueEndEvent.AddListener(AttachToTarget);
-    }
-    public void AttachToTarget()
-    {
-        _targetMovement = GetComponent<TargetMovement>();
-        _targetMovement.ActivateMovement();
     }
     public void ApplyDamage()
     {

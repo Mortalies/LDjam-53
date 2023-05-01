@@ -31,7 +31,7 @@ public class KeyboardInput : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            _player.Interactor.InteractWithNPC();
+            _player.Interactor.InteractWithSoul();
         }
         if (Input.GetKeyUp(KeyCode.F))
         {

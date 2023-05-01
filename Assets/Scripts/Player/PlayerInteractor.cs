@@ -7,6 +7,8 @@ public class PlayerInteractor : MonoBehaviour
 {
     [SerializeField] private float _attackDistance;
     [SerializeField] private float _interactDistance;
+
+    [SerializeField] private Player _player;
     
     public void Attack()
     {
@@ -19,14 +21,14 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 
-    public void InteractWithNPC()
+    public void InteractWithSoul()
     {
         var colliders = Physics2D.OverlapCircleAll(transform.position, _interactDistance);
         
         foreach (var collider in colliders)
         {
-            collider.gameObject.Route<IInteractable>(character => character.Interact());
-            collider.gameObject.Route<TargetMovement>(movement => movement.SetTarget(gameObject.transform));
+            
+            collider.gameObject.Route<SoulCharacter>(_player.SoulAdd);
         }
     }
 
