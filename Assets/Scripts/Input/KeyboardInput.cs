@@ -15,7 +15,7 @@ public class KeyboardInput : MonoBehaviour
     {
         //qDown = new UnityEvent();
     }
-    private void FixedUpdate()
+    private void Update()
     {
         var direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         _player.Movement.MoveDirection(direction);
