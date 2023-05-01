@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class SoulCharacter : MonoBehaviour, IInteractable
 {
     private bool _isSinner;
-    private TargetMovement _targetMovement;
     [SerializeField] private DialogueData _dialogueData;
 
     public UnityEvent soulMetHeaven = new UnityEvent();
@@ -47,4 +46,12 @@ public class SoulCharacter : MonoBehaviour, IInteractable
             gameObject.SetActive(false);
         }
     }
+    private SoulMovement _soulMovement;
+    public SoulMovement SoulMovement => _soulMovement;
+    
+    public void Awake()
+    {
+        _soulMovement = GetComponent<SoulMovement>();
+    }
+    
 }
