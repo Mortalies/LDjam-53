@@ -16,6 +16,7 @@ public class DialogWindowView : MonoBehaviour
     }
     public void ShowMessage(string name, string text)
     {
+        Debug.Log("MessageShowed");
         _dialogueWindowPanel.SetActive(true);
         _name.text = name;
         _message.text = text;

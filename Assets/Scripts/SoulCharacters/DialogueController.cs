@@ -34,8 +34,10 @@ public class DialogueController : MonoBehaviour
     }
     public void SetDialogue(List<Message> messages)
     {
+        
         if(!isDialogueStarted)
         {
+            Debug.Log("dialogueStarted");
             _messages = messages;
             isDialogueStarted = true;
             NextMessage();
@@ -45,6 +47,7 @@ public class DialogueController : MonoBehaviour
     {
         if(isDialogueStarted)
         {
+            Debug.Log("next message" + _messages.Count);
             if (messageCount >= _messages.Count)
             {
                 EndOfDialogue();

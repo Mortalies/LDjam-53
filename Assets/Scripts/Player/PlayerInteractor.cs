@@ -34,6 +34,7 @@ public class PlayerInteractor : MonoBehaviour
         {
             
             collider.gameObject.Route<SoulCharacter>(_player.SoulAdd);
+            collider.gameObject.Route<SoulCharacter>(soul => soul.Interact());
         }
     }
 

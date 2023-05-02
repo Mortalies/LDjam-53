@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Dialogue>
   <Question>
-    <Name>Soul</Name>
-    <questionText>Where I am?</questionText>
-  </Question>
-  <Question>
-    <Name>player</Name>
-    <questionText>haha you idioto xD</questionText>
+    <Name>Death</Name>
+    <questionText>
+      Who to deliver to heaven, and who to hell - it's up to you!
+      "WASD" - movement
+      "E" - wave with a scythe
+      "Q" - talk to a ghost
+    </questionText>
   </Question>
 </Dialogue>
